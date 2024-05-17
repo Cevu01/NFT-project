@@ -1,0 +1,214 @@
+@media (max-width: 79em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 68em) {
+  html {
+    font-size: 50%;
+  }
+  .hero-text-box {
+    margin-top: 4rem;
+  }
+  .roadmap-number {
+    font-size: 7.4rem;
+  }
+}
+
+@media (max-width: 54em) {
+  .heading-primarary {
+    font-size: 5.4rem;
+  }
+  .heading-secondary {
+    font-size: 4.4rem;
+  }
+  .heading-tertiary {
+    font-size: 2.8rem;
+  }
+  .main-nav-list {
+    gap: 3.8rem;
+  }
+
+  .subheading-dark {
+    font-size: 1.4rem;
+  }
+  .subheading-light {
+    font-size: 1.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .content {
+    font-size: 3rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.953);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+
+    /* Hide navigation */
+    /* Ne dozvoljava nikakve efekte */
+    /*  display: none;*/
+
+    /* (1) Ovako sakrijemo vizuelno */
+    opacity: 0;
+
+    /* (2) Ovako ne mozemo da aktiviramo preko tab ili misa */
+    pointer-events: none;
+
+    /*  (3) Ovako sakrijemo od screen ridersa */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  /* Samo kada je nav open ovo se aplajuje */
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    text-shadow: none;
+    color: #140917;
+  }
+  .free-nft:link,
+  .free-nft:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .slider {
+    width: 13rem;
+    height: 13rem;
+  }
+  .hero-image-slider {
+    flex-shrink: 0;
+  }
+
+  .step-img-box::after {
+    display: none;
+  }
+  .step-img-box {
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
+  .rare-description {
+    padding: 4rem 3.9rem;
+  }
+
+  .rare-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+  .section-rare {
+    padding: 9.6rem 0;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6rem;
+  }
+  .lista-ikona {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .hero {
+    padding: 0 4.8rem;
+  }
+
+  .hero {
+    padding: 0;
+  }
+  .hero-text-box {
+    padding: 0 4.8rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .grid {
+    row-gap: 6.4rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .step-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+  .step-img-box:nth-child(7) {
+    grid-row: 8;
+  }
+  .emty-div:nth-child(3) {
+    grid-row: 4;
+  }
+  .emty-div:nth-child(7) {
+    grid-row: 8;
+  }
+
+  .img-box:nth-child(3) {
+    grid-row: 4;
+  }
+  .story-img {
+    width: 75%;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  #select-where {
+    margin-bottom: 3rem;
+  }
+  .overlay {
+    overflow: hidden;
+  }
+
+  .btn {
+    margin-top: 3rem;
+    white-space: nowrap;
+  }
+  .section-roadmap {
+    padding: 4.8rem 0;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 2rem 3.6rem;
+    font-size: 2.4rem;
+  }
+}
